@@ -1,5 +1,4 @@
 <script setup>
-
 import Header from './components/Header.vue';
 import Hero from './components/Hero.vue';
 import About from './components/About.vue';
@@ -8,6 +7,8 @@ import Contact from './components/Contact.vue';
 import Footer from './components/Footer.vue';
 
 import { onMounted } from 'vue';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 function initSmoothScroll() {
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
@@ -60,12 +61,20 @@ function optimizeMobileAnimations() {
   }
 }
 
+function initAOS() {
+  AOS.init({
+    duration: 800,
+    once: true,
+    offset: 10,
+  });
+}
+
 onMounted(() => {
   initSmoothScroll();
   initScrollSpy();
   optimizeMobileAnimations();
+  initAOS();
 });
-
 </script>
 
 <template>
