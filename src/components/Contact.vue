@@ -22,7 +22,7 @@
           <div class="space-y-3 sm:space-y-4 text-base sm:text-lg">
             <div class="flex items-start gap-3 sm:gap-4">
               <span class="text-xl sm:text-2xl mt-1">📍</span>
-              <span class="flex-1">Jl. Mawar No. 123, Jakarta Selatan</span>
+              <span class="flex-1">Jl. Caramel, No. 22B. ZaramaraZ City</span>
             </div>
             <div class="flex items-center gap-3 sm:gap-4">
               <span class="text-xl sm:text-2xl">📞</span>
@@ -43,7 +43,7 @@
 
           <div class="mt-6 sm:mt-8 p-3 sm:p-4 bg-amber-800/50 rounded-lg">
             <p class="text-amber-200 font-semibold text-sm sm:text-base">
-              💝 Pre-order minimal 2 hari sebelumnya
+              💝 Pre-order minimal 1 hari sebelumnya
             </p>
           </div>
         </div>
@@ -62,13 +62,15 @@
               <input
                 type="text"
                 placeholder="Nama Lengkap"
+                id="name"
                 required
                 class="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent text-sm sm:text-base"
               />
             </div>
             <div>
               <input
-                type="tel"
+                type="telp"
+                id="telp"
                 placeholder="Nomor WhatsApp"
                 required
                 class="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent text-sm sm:text-base"
@@ -77,6 +79,7 @@
             <div>
               <input
                 type="email"
+                id="email"
                 placeholder="Email"
                 class="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent text-sm sm:text-base"
               />
@@ -84,6 +87,7 @@
             <div>
               <textarea
                 rows="4"
+                id="detail"
                 placeholder="Detail pesanan dan tanggal yang dibutuhkan..."
                 required
                 class="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent resize-none text-sm sm:text-base"
