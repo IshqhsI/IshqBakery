@@ -79,7 +79,7 @@
       class="mobile-menu md:hidden fixed top-16 w-full h-screen bg-white/95 backdrop-blur-xl"
       v-bind:class="{ open: isOpen }"
     >
-      <ul class="flex flex-col p-6 space-y-4">
+      <ul class="flex flex-col p-6 space-y-4" @click="isOpen = !isOpen">
         <li>
           <a
             href="#home"
@@ -121,7 +121,7 @@
   </header>
 
   <!-- Header -->
-  <header class="block lg:hidden">
+  <!-- <header class="block lg:hidden">
     <nav
       class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16"
     >
@@ -138,7 +138,7 @@
         </div>
       </a>
     </nav>
-  </header>
+  </header> -->
 </template>
 
 <script>
